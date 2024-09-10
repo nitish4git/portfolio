@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="nav-conatiner">
+        <!-- logo -->
+        <div class="logo">
+            <h2>NR</h2>
+        </div>
+        <!-- navlist -->
+        <div class="nav-list">
+            <ul>
+                <li> <a href="#Home">Home</a></li>
+                <li> <a href="#skills">Skills</a></li>
+                <li> <a href="#Certification">Certification</a> </li>
+                <li> <a href="#contact">Contact</a></li>
+                <li> <a href="#About">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- front content -->
+    <div class="main-section" id="Home">
+        <div class="content-section">
+            <h3>Hi There, <br> I'm <span> Nitish </span> Kumar.</h3>
+            <p>I'm a B.Tech 3rd Year student !!</p>
+            <button><a href="#">About Me </a></button>
+        </div>
+        <div class="image-section">
+            <img src="../IMAGES/mypic.jpg" alt="image">
+        </div>
+    </div>
+
+    <!-- skills section -->
+    <div class="skils-heading">
+        <h2 id="skills">Skills</h2>
+    </div>
+    <div class="skills-conatiner">
+        <div class="container1">C language</div>
+        <div class="container1">Python</div>
+        <div class="container1">HTML</div>
+        <div class="container1">CSS</div>
+        <div class="container1">JavaScript</div>
+        <div class="container1">MySQL</div>
+        <div class="container1">Java</div>
+        <div class="container1">Node.js</div>
+        <div class="container1">Kotlin</div>
+        <div class="container1">Excel</div>
+    </div>
+
+    <!-- Certification -->
+
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <h1>Enquiry </h2>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Sent your Request</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label class="contact-label" for="name">Name</label>
+                                <input type="text" placeholder="Mahesh dalle" id="name-input" onkeyup="nameValidate()">
+                                <span class="contact-name" id="name-error"> </span>
+                            </div>
+
+                            <div class="input-group">
+                                <label class="contact-label" for="phone">Phone</label>
+                                <input type="text" placeholder="+91 987654321" id="phone-input"
+                                    onkeyup="phoneValidate()">
+                                <span class="contact-phone" id="phone-error"></span>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label class="contact-label" for="email">Email</label>
+                                <input type="email" placeholder="abc@gmail.com" id="email-input"
+                                    onkeyup="emailValiate()">
+                                <span class="contact-email" id="email-error"> </span>
+
+                            </div>
+                            <div class="input-group">
+                                <label class="contact-label" for="subject">Subject</label>
+                                <input type="text">
+                                <span class="contact-subject"> </span>
+
+                            </div>
+                        </div>
+                        <label class="contact-label">Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button class="submit-button" type="submit"> Send</button>
+                    </form>
+
+                </div>
+                <div class="contact-right">
+                    <h3>Get in Touch</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>nitishroy@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+91 8092469449</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>Nashe Me Rahta hu </td>
+                        </tr>
+                        <tr>
+                            <td>Website</td>
+                            <td>www.something.com</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+    </div>
+
+    <!-- About -->
+    <div class="about-container" id="About">
+        <h2>About Me</h2>
+        <div class="about-box">
+            <div class="about-left">
+                <h3>About</h3>
+                <div>
+                    <p>I am an energetic , ambitious person who has developed a mature and responsible approach to any task that I undertake , or situation that I am presented with. As a graduate with 2 Year's of experience in Computer Science & Engineering , I am excellent in working with others to achieve a certain objectives on time and with excellence.</p>
+                    <button><a href="#">Hire Me</a></button>
+                </div>
+            </div>
+                <hr>
+            <div class="about-right">
+                <h3>My Work</h3>
+                <div class="work-field-box">
+                    <div class="work-field">
+                        <h4>My Portfolio <br>Website</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, consequuntur.</p>
+                        <button><a href="#Home" id="">View my Work</a></button> 
+                    </div>
+                    <div class="work-field">
+                        <h4>E-Commerce Website</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, consequuntur.</p>
+                            <button><a href="#">View my Work</a></button> 
+                    </div>
+                    
+                </div>
+                
+                <div class="work-field-box">
+                    <div class="work-field">
+                        <h4>Calculator</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, consequuntur.</p>
+                            <button><a href="#">View my Work</a></button>
+                    </div>
+                    <div class="work-field">
+                        <h4>Form Validation</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, consequuntur.</p>
+                            <button><a href="#">View my Work</a></button>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                <p>www.Nitishroy.com</p>
+            </div>
+            <div class="footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+        <!-- <div class="footerbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div> -->
+    </footer>
+
+    
+
+
+
+    <script src="../JAVASCRIPT/script.js">
+
+    </script>
+
+</body>
+
+</html>
